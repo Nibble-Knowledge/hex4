@@ -1,3 +1,5 @@
+/* Example code from http://tldp.org/HOWTO/NCURSES-Programming-HOWTO/keys.html */
+
 #include <stdio.h>
 #include <ncurses.h>
 
