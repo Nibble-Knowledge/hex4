@@ -1,7 +1,7 @@
 SRC=hex4.c
 EXE=hex4
 EXTRACFLAGS=
-EXTRALDFLAGS=
+EXTRALDFLAGS=-lncurses
 export SRC
 export EXE
 export EXTRACFLAGS
