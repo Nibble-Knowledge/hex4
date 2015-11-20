@@ -163,15 +163,18 @@ void printdisasm(unsigned char *inst)
 
 int interactive(char *file)
 {
-	char input = 0 ;
-	
+	char input = 0;
+	int row = 0, col = 0;	
+	char *str = "Interactive mode";
+
 	initscr();
 	raw();
 	keypad(stdscr, TRUE);
 	noecho();
 	do
 	{
-		printw("Interactive mode");
+		getmaxyx(stdscr, row, col);
+		mvprintw(row/2, (col-strlen(str))/2, "%s", str);
 		refresh();
 		input = getch();
 	}

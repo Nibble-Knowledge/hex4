@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <ncurses.h>
+#include <string.h>
 
 typedef struct _nibstor
 {
